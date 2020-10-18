@@ -3,10 +3,18 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
+        relatives = ["Sg","Sf","Sk","Sd"]
         return(
            <>
-//write your code here
+    <ol key="relativeList">
+        {
+        relatives.map((el,index) =>{
+            <li key={`relativeListItem${index+1}`}>
+                {el}
+            </li>
+        })}      
+    </ol>
+
 	</>
         )
     }
